@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartment Search Form</title>
+</head>
+
+<body>
+
+    <h1>Apartment Search</h1>
+
+    <form>
+
+        <!-- Location -->
+        <div>
+            <label for="location">Location:</label>
+            <br>
+            <textarea
+                id="location"
+                name="location"
+                placeholder="Enter your location"
+                rows="3"
+                cols="40"
+                required>
+              </textarea>
+        </div>
+
+        <br>
+
+        <!-- Monthly Price -->
+        <div>
+            <label for="price">Price (Per Month):</label>
+            <select id="price" name="price" required>
+                <option value="">Select Price Range</option>
+                <option value="20000-30000">20,000 - 30,000</option>
+                <option value="30000-50000">30,000 - 50,000</option>
+                <option value="50000-100000">50,000 - 1,00,000</option>
+                <option value="100000-1500000">1,00,000 - 15,00,000</option>
+            </select>
+        </div>
+
+        <br>
+
+        <!-- Number of Bedrooms -->
+        <div>
+            <label for="bedroom">Number of Bedrooms:</label>
+            <input
+                type="number"
+                id="bedroom"
+                name="bedroom"
+                min="0"
+                max="5"
+                required
+            >
+        </div>
+
+        <br>
+
+        <!-- Number of Bathrooms -->
+        <div>
+            <label for="bathroom">Number of Bathrooms:</label>
+            <input
+                type="number"
+                id="bathroom"
+                name="bathroom"
+                min="0"
+                max="5"
+                required
+            >
+        </div>
+
+        <br>
+
+        <!-- Pets Allowed -->
+        <div>
+            <label>Pets Allowed:</label>
+            <br>
+
+            <input type="checkbox" id="cat" name="pet" value="Cat">
+            <label for="cat">Cat</label>
+
+            <input type="checkbox" id="dog" name="pet" value="Dog">
+            <label for="dog">Dog</label>
+
+            <input type="checkbox" id="lovebird" name="pet" value="Lovebird">
+            <label for="lovebird">Lovebird</label>
+        </div>
+
+        <br>
+
+        <!-- Date Available -->
+        <div>
+            <label for="date">Available Date:</label>
+            <input type="date" id="date" name="date">
+        </div>
+
+        <br>
+
+        <!-- Submit and Reset Buttons -->
+        <div>
+            <button type="submit">Search Apartment</button>
+            <button type="reset">Reset</button>
+        </div>
+
+    </form>
+
+</body>
+</html>
