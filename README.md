@@ -33,6 +33,14 @@ Thank you for reviewing my work!
 | 8 | 2 days | Docker basics | 🟪 |
 | 9 | 2 weeks | Final project | 🟪 |
 
+## 🟡Phase 1: HTML and CSS
+- [] Task 1.1: Bangladesh flag using CSS positioning
+- [ ] Task 1.2: Bento-style image gallery with CSS Grid
+- [ ] Task 1.3: Analog clock UI
+- [ ] Task 2.1: Figma to page, Convention Center
+- [ ] Task 2.2: Figma to page, Restaurant
+- [ ] Task 2.3: Figma to page, Furniture e-commerce
+- [ ] Assessment: personal portfolio (static website)
 
 ## Tech Stack
 
