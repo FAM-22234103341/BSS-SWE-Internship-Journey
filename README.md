@@ -34,7 +34,7 @@ Thank you for reviewing my work!
 | 9 | 2 weeks | Final project | 🟪 |
 
 ## 🟡Phase 1: HTML and CSS
-- [ ] Task 1.1: Bangladesh flag using CSS positioning
+- [x] Task 1.1: Bangladesh flag using CSS positioning
 - [ ] Task 1.2: Bento-style image gallery with CSS Grid
 - [ ] Task 1.3: Analog clock UI
 - [ ] Task 2.1: Figma to page, Convention Center
