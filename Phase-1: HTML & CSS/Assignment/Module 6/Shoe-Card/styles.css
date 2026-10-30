@@ -1,0 +1,88 @@
+/* Universal selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #d9e2e8;
+}
+
+.container {
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 0 20px;
+}
+
+.card {
+  background-color: white;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  font-size: 27px;
+  margin-bottom: 20px;
+}
+
+.card p {
+  font-size: 12px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.card-sporty h2 {
+  color: red;
+}
+
+.card-casual h2 {
+  color: blue;
+}
+
+.card-formal h2 {
+  color: brown;
+}
+
+.card a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background-color: #333;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 10px;
+}
+
+.card a:hover {
+  opacity: 0.9;
+}
+
+.card-sporty a {
+  background-color: red;
+}
+
+.card-casual a {
+  background-color: blue;
+}
+
+.card-formal a {
+  background-color: brown;
+}
+
+
+.card-sporty{
+  background: white url(./images/sporty.png) no-repeat center right/200px;
+}
+
+.card-casual{
+  background: white url(./images/casual.png) no-repeat center right/200px;
+}
+
+.card-formal{
+  background: white url(./images/formal.png) no-repeat center right/200px;
+}
