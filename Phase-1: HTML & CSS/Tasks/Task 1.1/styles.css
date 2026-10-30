@@ -1,0 +1,29 @@
+/* 500 : 300 = 5 : 3 = 10 : 6
+.BD_flag {
+  width: 500px; 
+  height: 300px;
+  background-color: #006A4E;
+  position: relative;
+}
+*/
+h1{
+    font-weight: bold;
+    text-align: center ;
+}
+.BD_Flag{
+    width: 500px;
+    aspect-ratio: 10/6;
+    background-color: green;
+    position: relative;
+    margin: 0 auto;
+}
+.circle {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
