@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 20px;
+}
+
+h1 {
+    font-size: 18px;
+    text-decoration: center;
+    text-align: center;
+}
+
+.clock {
+    height: 300px;
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: relative;
+    
+}
+
+.blue, .red {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 2px;
+    transform-origin: left center;
+}
+
+
+.blue {
+    width: 110px;
+    background-color: blue;
+    transform: translateY(-50%) rotate(125deg);
+    animation: blueRotate 3600s linear infinite;
+}
+
+.red {
+    width: 130px;
+    background-color: red;
+    transform: translateY(-50%) rotate(270deg);
+    animation: redRotate 60s linear infinite;
+}
+
+
+@keyframes blueRotate {
+    from {
+        transform: translateY(-50%) rotate(125deg);
+    }
+
+    to {
+        transform: translateY(-50%) rotate(630deg);
+    }
+}
+
+
+@keyframes redRotate {
+    from {
+        transform: translateY(-50%) rotate(270deg);
+    }
+
+    to {
+        transform: translateY(-50%) rotate(630deg);
+    }
+}
