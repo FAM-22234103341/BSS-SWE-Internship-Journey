@@ -35,8 +35,8 @@ Thank you for reviewing my work!
 
 ## 🟡Phase 1: HTML and CSS
 - [x] Task 1.1: Bangladesh flag using CSS positioning
-- [ ] Task 1.2: Bento-style image gallery with CSS Grid
-- [ ] Task 1.3: Analog clock UI
+- [x] Task 1.2: Bento-style image gallery with CSS Grid
+- [x] Task 1.3: Analog clock UI
 - [ ] Task 2.1: Figma to page, Convention Center
 - [ ] Task 2.2: Figma to page, Restaurant
 - [ ] Task 2.3: Figma to page, Furniture e-commerce
