@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <title>Abacus Convention Center</title>
+</head>
+
+<body>
+ <!--Navigation-->
+  <nav class="navbar" aria-label="Main Navigation">
+    <div class="navbar-flex container">
+      <h3 class="navbar-logo"> Abacus Convention Center </h3>
+      <!--Menu-->
+      <div class="main-menu-items">
+        <ul class="main-menu-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#subscribe">Subscribe</a></li>
+        </ul>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="mobile-menu">
+
+        <button
+          class="mobile-menu-toggle"
+          type="button"
+          aria-label="Open mobile menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu-items">
+
+          <i class="fas fa-bars" aria-hidden="true"></i>
+        </button>
+
+        <div id="mobile-menu-items" class="mobile-menu-items">
+          <ul class="mobile-menu-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#subscribe">Subscribe</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+<section class="hero">
+  <div class="hero-slider">
+
+    <!-- Slide 1 -->
+    <div class="hero-slide active">
+      <img src="./images/image1.jpg" alt="Wedding event">
+
+      <div class="hero-content">
+        <h1><strong>The perfect venue for your <br> next event </br> </strong></h1>
+        <p>
+          Amet minim mollit non deserunt ullamco est sit aliqua <br>
+          dolor do amet sint. Velit officia consequat duis enim velit
+        </p>
+
+        <a href="#booking" class="btn">Book Now</a>
+      </div>
+    </div>
+
+     <!-- Slider Arrows -->
+    <button class="slider-arrow prev" aria-label="Previous slide">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+
+    <button class="slider-arrow next" aria-label="Next slide">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+
+    <!-- Indicators -->
+    <div class="slider-dots">
+      <button class="dot active" aria-label="Slide 1"></button>
+      <button class="dot" aria-label="Slide 2"></button>
+      <button class="dot" aria-label="Slide 3"></button>
+      <button class="dot" aria-label="Slide 4"></button>
+    </div>
+
+  </div>
+</section>
+
+<!-- Precious Section -->
+<section class="precious" id="about">
+  <div class="precious-container container">
+
+    <div class="precious-image">
+      <img
+        src="./images/image 2.png"
+        alt="wedding moment" >
+    </div>
+
+    <div class="precious-content">
+      <h2>Every moment is Precious</h2>
+      <p>
+        Amet minim mollit non deserunt ullamco est sit aliqua
+        dolor do amet sint. Velit officia consequat duis enim velit.
+        Exercitation veniam consequat sunt nostrud amet.
+      </p>
+
+      <a href="#album" class="precious-btn">
+        Explore our album
+        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- Notification -->
+<div class="offer-toast" id="offerToast" role="status">
+  <i class="fas fa-gift offer-icon" aria-hidden="true"></i>
+  <span>20% off on next booking</span>
+
+  <button
+    class="offer-close"
+    type="button"
+    aria-label="Dismiss booking offer">
+    &times;
+  </button>
+</div>
+
+
+<!-- Package Section -->
+<section class="packages" id="packages">
+  <div class="container">
+
+    <h2 class="packages-title">Our Package</h2>
+
+    <div class="packages-grid">
+
+      <!-- Card 1 -->
+      <div class="package-card">
+        <h3 class="package-price">$300</h3>
+        <h4 class="package-name">Business fair</h4>
+
+        <p class="package-description">
+          For most businesses event like book fair, craft fair.
+        </p>
+
+        <ul class="package-features">
+          <li>limited space access</li>
+          <li>Security facility</li>
+          <li>event support</li>
+          <li>Decoration design</li>
+          <li>Per day bill</li>
+        </ul>
+
+        <a href="#booking" class="package-btn">
+          Choose plan
+        </a>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="package-card">
+        <h3 class="package-price">$500</h3>
+        <h4 class="package-name">wedding basic</h4>
+
+        <p class="package-description">
+          For weddings with basic plan and limited item
+        </p>
+
+        <ul class="package-features">
+          <li>Full space access</li>
+          <li>Food arrangement</li>
+          <li>management support</li>
+          <li>Decoration design</li>
+          <li>Billed as shift</li>
+        </ul>
+
+        <a href="#booking" class="package-btn">
+          Choose plan
+        </a>
+      </div>
+
+      <!-- Card 3 - Featured -->
+      <div class="package-card package-featured">
+
+        <span class="package-hot">Hot</span>
+
+        <h3 class="package-price">$800</h3>
+        <h4 class="package-name">Wedding plus</h4>
+
+        <p class="package-description">
+          For most weddings with premium plans
+        </p>
+
+        <ul class="package-features">
+          <li>Full space access</li>
+          <li>Dedicated team</li>
+          <li>Buffet food</li>
+          <li>premium Decoration</li>
+          <li>pay as plan</li>
+        </ul>
+
+        <a href="#booking" class="package-btn">
+          Choose plan
+        </a>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="package-card">
+        <h3 class="package-price">$1200</h3>
+        <h4 class="package-name">Corporate event</h4>
+
+        <p class="package-description">
+          For most corporate business events
+        </p>
+
+        <ul class="package-features">
+          <li>Full space access</li>
+          <li>Dedicated team</li>
+          <li>Buffet food</li>
+          <li>premium Decoration</li>
+          <li>pay as plan</li>
+        </ul>
+
+        <a href="#booking" class="package-btn">
+          Choose plan
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Clients -->
+<section class="client" id="client">
+  <div class="container">
+
+    <h2 class="client-title">Happy Clients says</h2>
+
+    <div class="client-grid">
+
+      <!-- Client Card 1 -->
+      <div class="client-card">
+        <p class="client-text">
+          Slate helps you see how many more days you need
+          to work to reach your financial goal for the
+          month and year.
+        </p>
+
+        <img
+          src="./images/client 1.png"
+          alt="Regina Miles"
+          class="client-image"
+        >
+
+        <h3 class="client-name">Regina Miles</h3>
+        <p class="client-role">Banker</p>
+      </div>
+
+      <!-- Client Card 2 -->
+      <div class="client-card">
+        <p class="client-text">
+          Slate helps you see how many more days you need
+          to work to reach your financial goal for the
+          month and year.
+        </p>
+
+        <img
+          src="./images/client 2.png"
+          alt="Jone Drake"
+          class="client-image"
+        >
+
+        <h3 class="client-name">Jone Drake</h3>
+        <p class="client-role">Banker</p>
+      </div>
+
+      <!-- Client Card 3 -->
+      <div class="client-card">
+        <p class="client-text">
+          Slate helps you see how many more days you need
+          to work to reach your financial goal for the
+          month and year.
+        </p>
+
+        <img
+          src="./images/client 3.png"
+          alt="Cret Yater"
+          class="client-image"
+        >
+
+        <h3 class="client-name">Cret Yater</h3>
+        <p class="client-role">Banker</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- FAQ Section -->
+<section class="faq" id="faq">
+  <div class="container">
+
+    <h2 class="faq-title">
+      Frequently Asked Questions
+    </h2>
+
+    <div class="faq-container">
+
+      <!-- Left -->
+      <div class="faq-left">
+
+        <!-- Question 1 -->
+        <div class="faq-item active">
+          <button
+            class="faq-question"
+            type="button"
+            aria-expanded="true"
+            aria-controls="faq-answer-1">
+
+            <span>
+              What's the difference between event design
+              and event planning?
+            </span>
+
+            <i class="fas fa-chevron-down"></i>
+          </button>
+
+          <div class="faq-answer" id="faq-answer-1">
+            <p>
+              Event design and event planning work hand in hand
+              to deliver a successful event. Events by Knight
+              offer tailor made events. This means we incorporate
+              both event design and event planning to create
+              that perfect event.
+            </p>
+          </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="faq-item">
+          <button
+            class="faq-question"
+            type="button"
+            aria-expanded="false"
+            aria-controls="faq-answer-2">
+
+            <span>
+              How early do we need to start planning an event?
+            </span>
+
+            <i class="fas fa-chevron-down"></i>
+          </button>
+
+          <div class="faq-answer" id="faq-answer-2" hidden>
+            <p>
+              We recommend starting the planning process
+              as early as possible to ensure everything
+              is organized properly.
+            </p>
+          </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="faq-item">
+          <button
+            class="faq-question"
+            type="button"
+            aria-expanded="false"
+            aria-controls="faq-answer-3">
+
+            <span>
+              What is your refund and cancellation policy?
+            </span>
+
+            <i class="fas fa-chevron-down"></i>
+          </button>
+
+          <div class="faq-answer" id="faq-answer-3" hidden>
+            <p>
+              Refund and cancellation conditions depend on
+              the booking agreement and event package.
+              Please contact us for more information.
+            </p>
+          </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="faq-item">
+          <button
+            class="faq-question"
+            type="button"
+            aria-expanded="false"
+            aria-controls="faq-answer-4">
+
+            <span>
+              How do you keep budgets on track?
+            </span>
+
+            <i class="fas fa-chevron-down"></i>
+          </button>
+
+          <div class="faq-answer" id="faq-answer-4" hidden>
+            <p>
+              We prepare a detailed event budget and
+              monitor expenses throughout the planning
+              process to help manage costs.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right: Image -->
+      <div class="faq-image">
+        <img
+          src="./images/image 3.png"
+          alt="Audience enjoying">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-container container">
+
+    <!-- Copyright -->
+    <div class="footer-copyright">
+      <p>© 2020 bike. All rights reserved</p>
+    </div>
+
+
+<!-- Get the App -->
+<div class="footer-app">
+  <h3>Get the App</h3>
+
+  <div class="footer-app-links">
+
+    <!-- Apple App Store -->
+    <a href="https://www.apple.com/app-store/"
+       class="store-box"
+       target="_blank"
+       rel="noopener noreferrer">
+
+      <i class="fa-brands fa-apple store-icon"
+         aria-hidden="true"></i>
+
+      <div class="store-text">
+        <span class="store-small-text">
+          Download on the
+        </span>
+        <span class="store-large-text">
+          App Store
+        </span>
+      </div>
+
+    </a>
+
+    <!-- Google Play -->
+    <a href="https://play.google.com/store"
+       class="store-box"
+       target="_blank"
+       rel="noopener noreferrer">
+
+     <i class="fa-brands fa-google-play google-play-icon"
+     aria-hidden="true"></i>
+
+      <div class="store-text">
+        <span class="store-small-text google-small">
+          GET IT ON
+        </span>
+        <span class="store-large-text">
+          Google Play
+        </span>
+      </div>
+
+    </a>
+
+  </div>
+</div>
+
+  <script src="./script.js"></script>
+
+</body>
+</html>
