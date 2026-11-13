@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <title>Resturant</title>
+</head>
+
+
+<body>
+   <header class="header">
+    <nav class="navbar container">
+        <!--Logo-->
+        <a href="#home" class="navbar-logo">
+            <img src="images/Resturant-logo.png" alt="resturant-logo"/>
+            <span>Resturant</span>
+        </a>
+
+        <!--Navigation list-->
+        <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#clients">Clients</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    
+    
+    <!--Booking Button-->
+     <a href="#booking" class="btn btn-header">
+        BOOK A TABLE
+      </a>
+    <!--Mobile Menu-->
+    
+    <div class="mobile-menu">
+
+        <button
+          class="mobile-menu-toggle"
+          type="button"
+          aria-label="Open mobile menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu-items">
+
+          <i class="fas fa-bars" aria-hidden="true"></i>
+        </button>
+
+        <div id="mobile-menu-items" class="mobile-menu-items">
+          <ul class="mobile-menu-list">
+           <li><a href="#home" class="active">Home</a></li>
+           <li><a href="#about">About</a></li>
+           <li><a href="#portfolio">Portfolio</a></li>
+           <li><a href="#clients">Clients</a></li>
+           <li><a href="#blog">Blog</a></li>
+           <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>  
+    </div> 
+     </nav> 
+</header>
+
+       <!-- Hero -->
+    <section class="hero" id="home">
+
+    <div class="container hero-container">
+
+        <div class="hero-content">
+
+          <h1>
+            TASTE THE AUTHENTIC <br/> SAUDI CUISINE
+          </h1>
+
+          <p>
+            Among the best Saudi chefs in the world,
+            serving you something beyond flavor.
+          </p>
+
+          <a href="#portfolio" class="btn btn-primary">
+            EXPLORE MENU
+          </a>
+
+        </div>
+
+        <!-- Hero image -->
+        <div class="hero-image">
+
+          <img
+            src="images/image 1.png"
+            alt="Authenthic food"
+          />
+          
+          <!-- Star -->
+          <span class="hero-star" aria-hidden="true"></span>
+
+          <!-- Offer Badge -->
+          <div class="offer-badge">
+            <span>TODAY</span>
+            <span>OFFER</span>
+          </div>
+        </div>
+    </div>
+    </section>
+
+
+<!-- About Section -->
+<section class="about-section" id="about">
+
+  <div class="container">
+
+    <div class="about-container">
+
+      <!-- About Image -->
+      <div class="about-image">
+        <img
+          src="./images/image 2.png"
+          alt="About">
+      </div>
+
+      <!-- About Content -->
+      <div class="about-content">
+
+        <!-- Tabs -->
+        <div class="about-tabs"
+          role="tablist"
+          aria-label="Restaurant information">
+
+          <button
+            class="tab-btn active"
+            type="button"
+            role="tab"
+            id="tab-about"
+            aria-selected="true"
+            aria-controls="aboutTab">
+            About
+          </button>
+
+          <button
+            class="tab-btn"
+            type="button"
+            role="tab"
+            id="tab-experience"
+            aria-selected="false"
+            aria-controls="experienceTab">
+            Experience
+          </button>
+
+          <button
+            class="tab-btn"
+            type="button"
+            role="tab"
+            id="tab-contact"
+            aria-selected="false"
+            aria-controls="contactTab">
+            Contact
+          </button>
+
+        </div>
+
+        <!-- About Tab -->
+        <div
+          class="tab-content active"
+          id="aboutTab"
+          role="tabpanel"
+          aria-labelledby="tab-about">
+
+          <h2>
+            EXCEPTIONAL CULINARY<br>
+            EXPERIENCE AND DELICIOUS FOOD
+          </h2>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. Ornare non sed est cursus. Vel hac convallis
+            ipsum, facilisi odio pellentesque bibendum viverra
+            tempus. Lorem ipsum dolor sit amet consectetur
+            adipiscing elit do eiusmod tempor incididunt ut
+            labore et dolore magna minim veniam nostrud
+            exercitation.
+          </p>
+
+        </div>
+
+        <!-- Experience Tab -->
+        <div
+          class="tab-content"
+          id="experienceTab"
+          role="tabpanel"
+          aria-labelledby="tab-experience"
+          hidden>
+
+          <h2>
+            OVER 50 YEARS OF<br>
+            CULINARY EXPERIENCE
+          </h2>
+
+          <p>
+            With over 50 years of experience, our restaurant
+            brings authentic flavors and excellent service.
+            Our experienced chefs create delicious dishes
+            using fresh ingredients and traditional recipes.
+          </p>
+
+        </div>
+
+        <!-- Contact Tab -->
+        <div
+          class="tab-content"
+          id="contactTab"
+          role="tabpanel"
+          aria-labelledby="tab-contact"
+          hidden>
+
+          <h2>
+            GET IN TOUCH<br>
+            WITH OUR RESTAURANT
+          </h2>
+
+          <p>
+            We are always happy to hear from our customers.
+            Contact us for reservations, special occasions,
+            restaurant information, or any questions about
+            our food and services.
+          </p>
+
+        </div>
+
+        <!-- About Actions -->
+        <div class="about-actions">
+
+          <a href="#portfolio" class="btn about-btn">
+            ABOUT MORE
+          </a>
+
+          <a href="tel:+883426739485" class="about-phone">
+            <i class="fa-solid fa-phone-volume"></i>
+            <span>+88 3426 739 485</span>
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Features -->
+    <div class="about-features">
+
+      <div class="feature-item">
+        <div class="feature-icon">
+          <i class="fa-solid fa-cube"></i>
+        </div>
+
+        <div class="feature-content">
+          <h3>FAST DELIVERY</h3>
+          <p>Within 30 minutes</p>
+        </div>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon">
+          <i class="fa-solid fa-award"></i>
+        </div>
+
+        <div class="feature-content">
+          <h3>ABSOLUTE DINING</h3>
+          <p>Best buffet restaurant</p>
+        </div>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon">
+          <i class="fa-solid fa-bag-shopping"></i>
+        </div>
+
+        <div class="feature-content">
+          <h3>PICKUP DELIVERY</h3>
+          <p>Grab your food order</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Decorative Image -->
+  <img
+    src="./images/image 3.png"
+    alt=""
+    class="about-decoration"
+    aria-hidden="true">
+
+<section class="food" id="portfolio">
+
+  <img
+    src="./images/bell-paper.png"
+    alt=""
+    class="food-decoration"
+    aria-hidden="true"
+  >
+
+  <div class="container food-container">
+
+    <div class="food-header">
+      <div class="food-title">
+        <p>Crispy, Every Bite Taste</p>
+        <h2>POPULAR FOOD ITEMS</h2>
+      </div>
+
+      <div class="food-controls">
+        <button class="food-btn food-prev" type="button" aria-label="Previous items">
+          <i class="fa-solid fa-angle-left"></i>
+        </button>
+
+        <button class="food-btn food-next" type="button" aria-label="Next items">
+          <i class="fa-solid fa-angle-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="food-slider">
+      <div class="food-track">
+
+        <div class="food-card">
+          <div class="food-card-image">
+            <img src="./images/burger.png" alt="Burger">
+          </div>
+          <span class="food-card-line"></span>
+          <h3>VEGETABLES BURGER</h3>
+          <p>Barbecue Italian cuisine pizza</p>
+        </div>
+
+        <div class="food-card">
+          <div class="food-card-image">
+            <img src="./images/pizza.png" alt="Special Pizza">
+          </div>
+          <span class="food-card-line"></span>
+          <h3>SPACIAL PIZZA</h3>
+          <p>Barbecue Italian cuisine pizza</p>
+        </div>
+
+        <div class="food-card">
+          <div class="food-card-image">
+            <img src="./images/french-fries.png" alt="French Fries">
+          </div>
+          <span class="food-card-line"></span>
+          <h3>FRENCH FRIES</h3>
+          <p>Barbecue Italian cuisine</p>
+        </div>
+
+        <div class="food-card">
+          <div class="food-card-image">
+            <img src="./images/prown.png" alt="Prawn Dish">
+          </div>
+          <span class="food-card-line"></span>
+          <h3>CUISINE CHICKEN</h3>
+          <p>Japanese Cuisine Chicken</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Booking Section -->
+<section class="booking" id="booking">
+  <div class="container booking-container">
+    <div class="booking-content">
+
+      <p class="booking-title">Book Now</p>
+
+      <h2>BOOK YOUR TABLE</h2>
+
+      <p class="booking-text">
+        Enim tempor eget pharetra facilisis sed maecenas
+        adipiscing. Eu leo molestie vel, ornare non id blandit netus.
+      </p>
+
+      <!-- Booking Form -->
+      <form class="booking-form" id="bookingForm">
+
+        <div class="booking-form-row">
+
+          <input
+            type="text"
+            name="name"
+            class="booking-input"
+            placeholder="Your Name *"
+            aria-label="Your Name"
+            required
+          >
+
+          <input
+            type="email"
+            name="email"
+            class="booking-input"
+            placeholder="Your Email"
+            aria-label="Your Email"
+            required
+          >
+
+        </div>
+
+        <div class="booking-form-row">
+
+          <div class="booking-field">
+            <input
+              type="text"
+              name="date"
+              class="booking-input booking-date"
+              placeholder="Reservation Date"
+              aria-label="Reservation Date"
+              required
+            >
+          </div>
+
+          <input
+            type="number"
+            name="people"
+            class="booking-input"
+            placeholder="Total People"
+            aria-label="Total People"
+            min="1"
+            max="100"
+            required
+          >
+
+        </div>
+
+        <textarea
+          name="message"
+          class="booking-textarea"
+          placeholder="Message"
+          aria-label="Message"
+          rows="5"
+        ></textarea>
+
+        <button type="submit" class="btn booking-btn">
+          BOOK NOW
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+<!-- Customer Section -->
+<section class="customer" id="clients">
+
+  <img
+    src="./images/image 4.png"
+    alt=""
+    class="customer-decoration-left"
+    aria-hidden="true"
+  >
+
+  <img
+    src="./images/image 5.png"
+    alt=""
+    class="customer-decoration-right"
+    aria-hidden="true"
+  >
+
+  <div class="container customer-container">
+
+    <div class="customer-header">
+      <div class="customer-title">
+        <p>Crispy, Every Bite Taste</p>
+        <h2>WHAT SOME OF MY CUSTOMERS SAY</h2>
+      </div>
+    </div>
+
+    <div class="customer-layout">
+
+      <div class="customer-review">
+
+        <div class="customer-slider">
+          <div class="customer-track">
+
+            <!-- Review 1 -->
+            <article class="customer-slide">
+
+              <div class="customer-quote">
+                <span class="customer-quote-mark">“</span>
+
+                <p>
+                  You can't go wrong with Chicken Mandi.
+                  I had it twice. The chicken was cooked
+                  perfectly, juicy & soft (usually mandi
+                  chicken is a bit dry). I would definitely
+                  recommend it.
+                </p>
+              </div>
+
+              <div class="customer-author">
+
+                <div class="customer-author-info">
+                  <h3>KHALID AL DANSRY</h3>
+                  <p>Jeddah, Saudi</p>
+                </div>
+
+                <img
+                  src="./images/customer.png"
+                  alt="Customer portrait"
+                  class="customer-author-image"
+                >
+
+              </div>
+
+            </article>
+
+            <!-- Review 2 -->
+            <article class="customer-slide">
+
+              <div class="customer-quote">
+                <span class="customer-quote-mark">“</span>
+
+                <p>
+                  The food was absolutely delicious.
+                  The service was excellent and the
+                  atmosphere was wonderful. I enjoyed
+                  every moment of our dining experience.
+                </p>
+              </div>
+
+              <div class="customer-author">
+
+                <div class="customer-author-info">
+                  <h3>AHMED HASSAN</h3>
+                  <p>Riyadh, Saudi</p>
+                </div>
+
+                <img
+                  src="./images/customer.png"
+                  alt="Customer portrait"
+                  class="customer-author-image"
+                >
+
+              </div>
+
+            </article>
+
+            <!-- Review 3 -->
+            <article class="customer-slide">
+
+              <div class="customer-quote">
+                <span class="customer-quote-mark">“</span>
+
+                <p>
+                  Amazing restaurant with authentic
+                  flavors and excellent hospitality.
+                  Everything was fresh and perfectly
+                  prepared. Highly recommended.
+                </p>
+              </div>
+
+              <div class="customer-author">
+
+                <div class="customer-author-info">
+                  <h3>MOHAMMED ALI</h3>
+                  <p>Dubai, UAE</p>
+                </div>
+
+                <img
+                  src="./images/customer.png"
+                  alt="Customer portrait"
+                  class="customer-author-image"
+                >
+
+              </div>
+
+            </article>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Food Video Image -->
+      <div class="customer-video">
+
+        <img
+          src="./images/Video.png"
+          alt="Traditional Saudi cuisine"
+          class="customer-video-image"
+        >
+
+        <button
+          class="customer-play-btn"
+          type="button"
+          aria-label="Play restaurant video">
+        </button>
+
+      </div>
+
+    </div>
+
+    <!-- Slider Controls -->
+    <div class="customer-controls">
+
+      <button
+        class="customer-btn customer-prev"
+        type="button"
+        aria-label="Previous customer review">
+        <i class="fa-solid fa-angle-left"></i>
+      </button>
+
+      <button
+        class="customer-btn customer-next"
+        type="button"
+        aria-label="Next customer review">
+        <i class="fa-solid fa-angle-right"></i>
+      </button>
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer Section -->
+<footer class="footer" id="contact">
+
+  <div class="container footer-container">
+
+    <h2>
+      WE READY TO HAVE YOU THE BEST DINING EXPERIENCES
+    </h2>
+
+    <div class="footer-info">
+
+      <div class="footer-item">
+        <i class="fa-regular fa-clock"></i>
+        <h3>OPENING HOURS</h3>
+        <p>Monday - Sunday</p>
+        <p>9:00 AM to 11:30 PM</p>
+      </div>
+
+      <div class="footer-item">
+        <i class="fa-solid fa-phone-volume"></i>
+        <h3>LET'S TALK</h3>
+        <p>Phone: 1-800-222-4545</p>
+        <p>Fax: 1-800-222-4545</p>
+      </div>
+
+      <div class="footer-item">
+        <i class="fa-regular fa-envelope"></i>
+        <h3>BOOK A TABLE</h3>
+        <p>Email: demo@website.com</p>
+        <p>Support: support@website.com</p>
+      </div>
+
+      <div class="footer-item">
+        <i class="fa-solid fa-location-dot"></i>
+        <h3>OUR ADDRESS</h3>
+        <p>
+          123 Stree New York City, United<br>
+          States Of America.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="footer-social">
+
+      <a href="https://www.facebook.com/"
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="Facebook">
+        <i class="fa-brands fa-facebook-f"></i>
+      </a>
+
+      <a href="https://x.com/"
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="X">
+        <i class="fa-brands fa-x-twitter"></i>
+      </a>
+
+      <a href="https://www.instagram.com/"
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+
+      <a href="https://www.linkedin.com/"
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin-in"></i>
+      </a>
+
+    </div>
+
+    <p class="footer-copyright">
+      © 2023 All Rights Reserved
+    </p>
+
+  </div>
+
+</footer>
+
+    <script src="./script.js"></script>
+
+
+</body>
+</html>
